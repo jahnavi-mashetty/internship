@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.portfolio-logo {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 700;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #4b6cc1;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.banner-section-bg-container {
+  background-color: #191a1d;
+  height: 100vh;
+}
+.banner-section-heading {
+  color: white;
+  font-family: "Roboto";
+  font-size: 45px;
+  font-weight: 300;
+}
+.banner-section-description {
+  color: #9aa5b1;
+  font-family: "Roboto";
+  font-size: 24px;
+}
+.banner-section-image {
+  width: 280px;
+  margin-bottom: 10px;
+  
+}
+.person-name {
+  color: #4b6cc1;
+}
+.custom-button {
+  color: white;
+  background-color: #4b6cc1;
+  width: 130px;
+  height: 45px;
+  border-width: 0;
+  border-radius: 8px;
+}
+.about-me-section {
+  background-color:#323f4b;
+  height: 50vh;
+  text-align: center;
+}
+.about-me-section-sub-heading {
+  color: #cced00;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: bold;
+}
+.about-me-section-heading {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 36px;
+  font-weight: bold;
+}
+.about-me-section-description {
+  color: #9aa5b1;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+.skills-section {
+  background-color: #1f2933;
+}
+.skills-section-sub-heading {
+  color: #cced00;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: bold;
+}
+.skills-card {
+  background-color: #323f4b;
+  border-radius: 8px;
+  padding: 10px;
+}
+.skills-card-image {
+  width: 64px;
+  height: 64px;
+}
+.skills-card-title {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.test-image {
+  height: 30vh;
+  width: 30vw;
+  padding: 10px;
+}
+.project-discription {
+  color: #ffffff;
+  font-family: "Roboto";
+}
+  </style>  
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand portfolio-logo" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-link active text-white" href="#">
+            Home
+            <span class="sr-only">(current)</span>
+          </a>
+          <a class="nav-link text-white"  href="#about-me">About me</a>
+          <a class="nav-link text-white" href="#projects">Projects</a>
+          <a class="nav-link text-white" href="#testimonial">Testimonial</a>
+      </div>
+      </div>
+    </nav>
+    <div class="banner-section-bg-container d-flex flex-column justify-content-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-5 order-1 order-md-2">
+            <img
+              src="https://res.cloudinary.com/dseoni2u5/image/upload/my%20image/Screenshot_20220101-171413_WhatsApp_axauiq.jpg"
+              class="banner-section-image"
+            />
+          </div>
+          <div class="col-12 col-md-7 order-2 order-md-1 d-flex flex-column justify-content-center">
+            <p class="banner-section-description mb-3">
+              Hey, I am <br/><span class="person-name banner-section-heading">Jahnavi Mashetty</span>
+            </p>
+            <p class="banner-section-description mb-3">
+              I am a Frontend Developer.
+            </p>
+            <button class="custom-button" href="#contact">Contact Me</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="about-me" class="about-me-section pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-12 order-1 order-md-1 d-flex flex-column justify-content-center mt-5">
+              <h1 class="about-me-section-heading mb-3 text-center mt-5">About me</h1>
+              <p class="about-me-section-description">
+                My name is Jahnavi Mashetty, and I am currently looking for a internship in Frontend Development. 
+                I have been learning these Frontend technologies from 3 years.
+                 I am currently pursuing B.Tech 3rd year in Computer Science and Engineering. 
+                 I am an acadamic trainee at NxtWave CCBP acadamey.
+                 And I also done one internship at edunet Foundation as Data Analyst for 6-weeks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skills-section pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="skills-section-sub-heading mb-3">
+                Skills :
+              </h1>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="shadow skills-card text-center mb-3">
+                <img
+                  src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-html-img.png"
+                  class="skills-card-image"
+                />
+                <h1 class="skills-card-title">HTML</h1>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="shadow skills-card text-center mb-3">
+                <img
+                  src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-css-img.png"
+                  class="skills-card-image"
+                />
+                <h1 class="skills-card-title">CSS</h1>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="shadow skills-card text-center mb-3">
+                <img
+                  src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-bootstrap-img.png"
+                  class="skills-card-image"
+                />
+                <h1 class="skills-card-title">Bootstrap</h1>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="shadow skills-card text-center mb-3">
+                <img
+                  src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-js-img.png"
+                  class="skills-card-image"
+                />
+                <h1 class="skills-card-title">JS</h1>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="shadow skills-card text-center mb-3">
+                <img
+                  src="https://img.freepik.com/premium-vector/computer-pointer-hand-with-index-finger_160063-17.jpg?w=740" 
+                  class="skills-card-image"
+                />
+                <h1 class="skills-card-title">Python</h1>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="shadow skills-card text-center mb-3">
+                <img
+                  src="https://logodix.com/logo/840648.png" class="skills-card-image"
+                />
+                <h1 class="skills-card-title">My sql</h1>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="shadow skills-card text-center mb-3">
+                <img
+                  src="https://www.pngitem.com/pimgs/m/31-312155_c-programming-language-logo-hd-png-download.png"
+                  class="skills-card-image"
+                />
+                <h1 class="skills-card-title">C</h1>
+              </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="shadow skills-card text-center mb-3">
+                  <img
+                    src="https://www.pngkey.com/png/detail/264-2646582_logo-transparent-background-java.png"
+                    class="skills-card-image"
+                  />
+                  <h1 class="skills-card-title">Java</h1>
+                </div>
+                </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-me-section pt-5 pb-5" id="projects">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="skills-section-sub-heading mb-3">
+                Projects :
+              </h1>
+            </div>
+            <div class="col-4">
+              <div class="shadow skills-card text-center mb-3">
+                <h1 class="skills-card-title">Boomb defuser</h1>
+                <p class="project-discription"> This project is done by using HTML,CSS and JavaScript.
+                  You have to enter the correct password in the given time. If times gets over
+                then bomb gets defused.</p>
+                <a href="https://bombdefusejaanu.ccbp.tech/">Bomb defuser</a>
+                 
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="shadow skills-card text-center mb-3">
+                <h1 class="skills-card-title">Todo-list</h1>
+                <p class="project-discription"> This project is done by using HTML,CSS and JavaScript.
+                 This will helps to add new todo items and delete the previous todo items. </p>
+                <a href="https://jahnavimashetty.ccbp.tech/">Todo-list</a>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="shadow skills-card text-center mb-3">
+                <h1 class="skills-card-title">GO REST</h1>
+                <p class="project-discription"> This project is done by using HTML,CSS and JavaScript.
+                   This is used to put and post the body using the javascript methods</p>
+                <a href="https://jahnavirestcons.ccbp.tech/">GO REST</a>
+                
+              </div>
+            </div>
+            </div>
+            </div>
+      </div>
+       <div id="testimonial" class="skills-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="about-me-section-heading pt-3">Testimonial</h1>
+            </div>
+            <div class="col-4">
+              <img src="https://res.cloudinary.com/dseoni2u5/image/upload/v1711090750/Screenshot_20240322_114554_Samsung_Internet_r7v5tr.jpg"
+                 class="test-image"
+              />
+            </div>
+            <div class="col-4">
+              <img src="https://res.cloudinary.com/dseoni2u5/image/upload/v1711090751/Screenshot_20240322_114543_Samsung_Internet_ecuhoy.jpg"
+                 class="test-image"
+              />
+            </div>
+            <div class="col-4">
+              <img src="https://res.cloudinary.com/dseoni2u5/image/upload/v1711090751/Screenshot_20240322_114608_Samsung_Internet_zikbw4.jpg"
+                 class="test-image"
+              />
+            </div>
+            <div class="col-4">
+              <img src="https://res.cloudinary.com/dseoni2u5/image/upload/v1711090752/Screenshot_20240322_115043_LinkedIn_lyfvmm.jpg"
+                 class="test-image"
+              />
+            </div>
+            <div class="col-4">
+              <img src="https://res.cloudinary.com/dseoni2u5/image/upload/v1711090751/Screenshot_20240322_114900_Samsung_Internet_jaowzy.jpg"
+                 class="test-image"
+              />
+            </div>
+            <div class="col-4">
+              <img src="https://res.cloudinary.com/dseoni2u5/image/upload/v1711090751/Screenshot_20240322_114840_Samsung_Internet_xoa13m.jpg"
+                 class="test-image"
+              />
+            </div>
+            <div class="col-4">
+              <img src="https://res.cloudinary.com/dseoni2u5/image/upload/v1711090751/Screenshot_20240322_114916_Samsung_Internet_abg452.jpg"
+                 class="test-image"
+              />
+            </div>
+            <div class="col-4">
+              <img src="https://res.cloudinary.com/dseoni2u5/image/upload/v1711090753/Screenshot_20240322_115109_LinkedIn_yulbk6.jpg"
+                 class="test-image"
+              />
+            </div>
+            <div class="col-4">
+              <img src="https://res.cloudinary.com/dseoni2u5/image/upload/v1711090752/Screenshot_20240322_115056_LinkedIn_cry27g.jpg"
+                 class="test-image"
+              />
+            </div>
+          </div>
+        </div>
+       </div>
+       <div id="Contact" class="about-me-section pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-12 order-1 order-md-1 d-flex flex-column justify-content-center mt-5">
+              <h1 class="about-me-section-heading mb-3 text-center mt-5">Contact Me</h1>
+               <p class="project-discription">Mail id : jahnavimashetty@gmail.com</p>
+               <p class="project-discription">Mobile: 6303502230</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
